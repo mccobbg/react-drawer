@@ -1,0 +1,36 @@
+#not_found {
+  margin-top: 4rem;
+  background: var(--color-white);
+  transition: var(--transition);
+}
+
+.not_found__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 5rem 0 6rem;
+}
+
+.not_found__container p {
+  width: 50rem;
+  text-align: center;
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  /* margin: 6rem 0 6rem; */
+}
+
+.not_found__container h3 {
+  text-align: left;
+  color: var(--color-black);
+  margin-bottom: 0.6rem;
+  margin: 3rem 0 3rem;
+}
+
+.not_found__btn {
+  display: flex;
+  align-self: center;
+  gap: 1.2rem;
+}

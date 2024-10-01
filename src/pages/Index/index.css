@@ -1,0 +1,211 @@
+#dashboard {
+  padding: 0;
+  margin: 0.8rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background: var(--color-light);
+}
+
+#dashboard .location__icon {
+  padding-left: 0.1rem;
+  width: 100%;
+}
+
+.dashboard__content {
+  max-width: 100%;
+  min-width: 60%;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard__toolbar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+  padding: 0.3rem;
+  margin: 0.4rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dashboard__toolbar button {
+  padding-left: 0.25rem;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 0.2rem 0.8rem hsla(var(--primary-hue), 68%, 42%, 20%);
+}
+
+.toolbar__file__info {
+  background: var(--color-white);
+  padding-left: 2.5rem;
+  padding-right: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 1.2rem;
+  flex-direction: column;
+  max-width: 40%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -5;
+  transition: all 0.3s ease-in-out;
+}
+
+.toolbar__file__info .close__toolbar__info {
+  color: darkgray;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  top: 6rem;
+  right: 4rem;
+  position: fixed;
+}
+
+.toolbar__file__info .close__toolbar__info:active {
+  color: hsl(230, 69%, 55%);
+}
+
+.toolbar__file__background {
+  background: var(--color-white);
+  max-width: 40%;
+  min-height: 100vh;
+  padding-left: 2.5rem;
+  padding-right: 6rem;
+  padding-top: 2rem;
+  margin-right: 3rem;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+}
+
+#dashboard h2 {
+  margin: 2.5rem 0 2rem;
+}
+
+.wrap__input {
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+#index {
+  padding: 0.5rem;
+  display: block;
+  background: var(--color-light);
+}
+
+.picture__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.index {
+  max-width: 30rem;
+  margin: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.input__15 {
+  width: 14rem;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  background: var(--color-white);
+  border: 3px solid var(--color-white);
+  border-radius: 0.35rem;
+  outline: none;
+}
+
+.index:hover {
+  border-color: darkgray;
+}
+
+.card.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.dashboard__container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+label {
+  color: var(--color-black);
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.file__info__input {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.toolbar__file__info span:before {
+  content: ' *';
+  color: red;
+}
+
+@keyframes animateProject {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dashboard__container p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-black);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.dashboard__image {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.preview__upload {
+  background: var(--color-light);
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  .dashboard__projects {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+  .dashboard__categories {
+    gap: 0.6rem;
+  }
+
+  .btn.cat__btn {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .dashboard__projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

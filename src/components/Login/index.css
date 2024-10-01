@@ -1,0 +1,234 @@
+.card.login__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-light);
+  z-index: 200;
+  text-align: center;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+  width: 28rem;
+  padding: 2rem;
+  opacity: 0;
+  animation: animateModal 500ms ease-in forwards;
+}
+
+/*
+margin: top right bottom left;
+margin: top right-left bottom
+margin: top-bottom right-left
+*/
+
+.password__input {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.password_text__button {
+  color: black;
+  background-color: #edeff0;
+  margin: 0.9rem 0.6rem 0.4rem 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+  position: fixed;
+  right: 2.2rem;
+}
+
+.card.login__modal small {
+  margin-top: 0.6rem;
+  display: block;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.container-login100 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+
+.login100-form {
+  width: 100%;
+}
+
+.login100-form-title {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #7a7a7a;
+  border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.login100-form-btn {
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.8rem !important;
+  padding: 0;
+  width: 100% !important;
+  height: 3.3rem;
+  color: white !important;
+  background: #50504f !important;
+  border-radius: var(--border-radius-3);
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: var(--transition);
+}
+
+.login100-form-btn:active {
+  background-color: hsl(234, 73%, 50%) !important;
+}
+
+.wrap-input100 {
+  width: 100%;
+  background-color: var(--color-light);
+}
+
+.input100 {
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  background-color: #edeff0;
+  border: 3px solid #d7dbdf;
+  border-radius: 0.35rem;
+  outline: none;
+}
+
+.text-danger {
+  color: red;
+}
+
+.input100:focus {
+  border: 3px solid hsl(234, 73%, 75%);
+}
+
+.input100:hover {
+  border: 3px solid hsl(234, 73%, 75%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.txt2 {
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.4;
+}
+
+.txt2-button {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: hsl(234, 73%, 50%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-button {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: hsl(234, 73%, 50%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flex-col-c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.p-l-55 {
+  padding-left: 0;
+}
+
+.p-r-55 {
+  padding-right: 0;
+}
+
+.p-t-13 {
+  padding-top: 1rem;
+}
+
+.p-t-140 {
+  padding-top: 9rem;
+}
+
+.p-t-10 {
+  padding-top: 6rem;
+}
+
+.p-b-23 {
+  padding-bottom: 1.5rem;
+}
+
+.p-b-9 {
+  padding-bottom: 0.5rem;
+}
+
+.m-b-16 {
+  margin-bottom: 1.2rem;
+}
+
+.m-b-9 {
+  margin-bottom: 0.5rem;
+}
+
+toast {
+  z-index: 9999;
+}

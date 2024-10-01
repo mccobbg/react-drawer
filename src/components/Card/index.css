@@ -1,0 +1,25 @@
+.card {
+  background: transparent;
+  padding: 1.4rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-1);
+  transition: var(--transition);
+}
+
+.card:hover {
+  backdrop-filter: blur(5px);
+  border-color: var(--color-white);
+  transform: translateY(-0.5rem);
+}
+
+.card.light:hover {
+  backdrop-filter: blur(5px);
+  border-color: var(--color-light);
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 1.2rem;
+  }
+}

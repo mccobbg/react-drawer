@@ -1,0 +1,150 @@
+.fileUploader {
+  width: 100%;
+}
+
+.fileContainer .no__display {
+  display: none;
+}
+
+.fileContainer {
+  background: var(--color-light);
+  transition: all 0.3s ease-in;
+  min-height: 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.fileContainer input {
+  display: none;
+}
+
+.fileContainer p {
+  font-size: 12px;
+  margin: 8px 0 4px;
+}
+
+.fileContainer .errorsContainer {
+  max-width: 100%;
+  font-size: 1rem;
+  color: red;
+  text-align: left;
+}
+
+.fileContainer .chooseFileButton {
+  padding: 6px 23px;
+  background: #3f4257;
+  border-radius: 30px;
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+#svg-icon {
+  border: 1px dotted black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px gray;
+}
+
+#svg-icon path {
+  stroke: var(--color-black);
+}
+
+#svg-icon line {
+  stroke: var(--color-black);
+}
+
+#svg-icon circle {
+  stroke: var(--color-black);
+}
+
+#svg-icon:active {
+  border-color: hsl(230, 69%, 55%);
+  border-width: 2px;
+  box-shadow: none;
+}
+
+#svg-icon:active path {
+  stroke: hsl(230, 69%, 55%);
+  stroke-width: '32';
+}
+
+#svg-icon:active line {
+  stroke: hsl(230, 69%, 55%);
+  stroke-width: '32';
+}
+
+#svg-icon:active circle {
+  stroke: hsl(230, 69%, 55%);
+  stroke-width: '32';
+}
+
+.fileContainer .chooseFileButton:hover {
+  background: #545972;
+}
+
+.fileContainer .uploadFilesButton {
+  padding: 5px 43px;
+  background: transparent;
+  border-radius: 30px;
+  color: #3f4257;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 10px 0;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #3f4257;
+}
+
+.fileContainer .uploadFilesButton:hover {
+  background: #3f4257;
+  color: #fff;
+}
+
+.uploadIcon {
+  transition: var(--transition);
+}
+
+.uploadIcon:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.fileContainer .uploadPicturesWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+
+.fileContainer .uploadPictureContainer {
+  transition: var(--transition);
+  max-width: 30rem;
+  margin: 0.5rem;
+  position: relative;
+}
+
+.mv_x {
+  padding-right: 3px;
+}
+
+.uploadPictureContainer:hover {
+  border-color: darkgray;
+}
+
+.flipMove {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 100%;
+}

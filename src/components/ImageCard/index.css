@@ -1,0 +1,5 @@
+.gallery__img img {
+  max-width: 28rem;
+  max-height: 28rem;
+  object-fit: contain; /* or "cover" */
+}

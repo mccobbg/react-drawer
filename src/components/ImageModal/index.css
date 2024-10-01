@@ -1,0 +1,180 @@
+.card.image__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-light);
+  z-index: 200;
+  text-align: center;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 80%;
+  border-radius: var(--border-radius-3);
+  opacity: 0;
+  animation: animateModal 300ms ease-in forwards;
+}
+
+.image__portrait {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.image__landscape {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.25rem;
+}
+
+.image__img {
+  display: block;
+  overflow: hidden;
+}
+
+.image__portrait.image__img img {
+  max-height: 100%;
+  width: auto;
+}
+
+.image__landscape.image__img img {
+  max-width: 80%;
+  height: auto;
+}
+
+.image__artist {
+  margin: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.table__artist {
+  width: 100%;
+  max-width: 100%;
+}
+
+.table__artist td {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.table__artist td:first-child {
+  font-weight: 500;
+  padding-right: 1rem;
+}
+
+.image__caption p {
+  font-size: 1rem;
+  text-align: left;
+  margin-top: 0.2rem;
+}
+
+.image__footer p {
+  font-size: 0.6rem;
+  text-align: center;
+  color: black;
+  line-height: 1rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+/*
+margin: top right bottom left;
+margin: top right-left bottom
+margin: top-bottom right-left
+*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-middle {
+  vertical-align: middle;
+}
+
+.txt2 {
+  font-size: 1rem;
+  color: #444444;
+  line-height: 1.4;
+}
+
+.txt2-button {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: hsl(234, 73%, 50%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-button {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: hsl(234, 73%, 50%);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flex-col-c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.p-l-55 {
+  padding-left: 0;
+}
+
+.p-r-55 {
+  padding-right: 0;
+}
+
+.p-t-13 {
+  padding-top: 1rem;
+}
+
+.p-t-140 {
+  padding-top: 9rem;
+}
+
+.p-t-10 {
+  padding-top: 6rem;
+}
+
+.p-b-23 {
+  padding-bottom: 1.5rem;
+}
+
+.p-b-9 {
+  padding-bottom: 0.5rem;
+}
+
+.m-b-16 {
+  margin-bottom: 1.2rem;
+}
+
+.m-b-9 {
+  margin-bottom: 0.5rem;
+}
+
+toast {
+  z-index: 9999;
+}
