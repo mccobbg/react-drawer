@@ -1,5 +1,5 @@
 # react-drawer
-React JS + Vite Image gallery Web app with Firebase sign up and sign in
+React JS + Vite Image gallery Web app with Firebase authentication
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
