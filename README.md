@@ -1,5 +1,5 @@
 # react-drawer
-React JS + Vite Image gallery Web app with Firebase sign up and sign in
+React JS + Vite Image gallery Web app with Firebase authentication
 
 Note: the images in the public/images were removed. To get this app up and running, you will need to add your own image that's displayed above the fold on the home page. To display the 
 gallery images, you will need your own flickr account.
