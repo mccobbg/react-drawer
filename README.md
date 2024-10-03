@@ -1,6 +1,11 @@
 # react-drawer
 React JS + Vite Image gallery Web app with Firebase sign up and sign in
 
+Note: the images in the public/images were removed. To get this app up and running, you will need to add your own image that's displayed above the fold on the home page. To display the 
+gallery images, you will need your own flickr account.
+
+You will also need to have your own Firebase account and in the console create a react-drawer app.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
